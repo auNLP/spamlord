@@ -101,13 +101,13 @@ def score(guess_list, gold_list):
     # pp.pprint(guess_set)
     # print 'Gold (%d): ' % len(gold_set)
     # pp.pprint(gold_set)
-    print 'True Positives (%d): ' % len(tp)
+    print(f'True Positives ({len(tp)}): ')
     pp.pprint(tp)
-    print 'False Positives (%d): ' % len(fp)
+    print(f'False Positives ({len(fp)}): ')
     pp.pprint(fp)
-    print 'False Negatives (%d): ' % len(fn)
+    print(f'False Negatives ({len(fn)}): ')
     pp.pprint(fn)
-    print 'Summary: tp=%d, fp=%d, fn=%d' % (len(tp), len(fp), len(fn))
+    print(f'Summary: tp={len(tp)}, fp={len(fp)}, fn={len(fn)}')
 
 
 def main(data_path, gold_path):
@@ -127,6 +127,6 @@ matching e-mails or phone numbers and compares them to the gold file
 """
 if __name__ == '__main__':
     if (len(sys.argv) != 3):
-        print 'usage:\tSpamLord.py <data_dir> <gold_file>'
+        print('usage:\tSpamLord.py <data_dir> <gold_file>')
         sys.exit(0)
     main(sys.argv[1], sys.argv[2])
