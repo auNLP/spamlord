@@ -13,7 +13,7 @@ Step 2. Use a regex editor to test patterns, then add them to the starter code i
 On terminal on MacOS or Command prompt on windows and run the python file.
 
 ```
-python SpamLord.py data/dev data/devGOLD
+python SpamLord.py ..data/dev ..data/devGOLD
 ```
 
 Try to gradually improve your accuracy by adding additional match patterns to Spamlord.py.
